@@ -4,7 +4,8 @@ import java.util.Map;
 
 public class MailContentRequest {
     private String mailTemplate;
-    private Map<String, Object> parameters;
+
+    private Map<String, String> parameters;
 
     public String getMailTemplate() {
         return mailTemplate;
@@ -14,11 +15,11 @@ public class MailContentRequest {
         this.mailTemplate = mailTemplate;
     }
 
-    public Map<String, Object> getParameters() {
+    public Map<String, String> getParameters() {
         return parameters;
     }
 
-    public void setParameters(Map<String, Object> parameters) {
+    public void setParameters(Map<String, String> parameters) {
         this.parameters = parameters;
     }
 }

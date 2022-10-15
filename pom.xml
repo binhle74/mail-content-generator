@@ -10,7 +10,7 @@
     </parent>
     <groupId>me.binhle</groupId>
     <artifactId>mail-generator</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>1.0.0</version>
     <name>mail-generator</name>
     <description>mail-generator</description>
     <properties>

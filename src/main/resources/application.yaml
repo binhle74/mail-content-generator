@@ -1,3 +1,6 @@
 server:
   servlet:
-    context-path: /api
+    context-path: /mg/api
+spring:
+  profiles:
+    active: dev
