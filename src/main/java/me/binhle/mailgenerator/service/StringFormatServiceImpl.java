@@ -37,6 +37,7 @@ public class StringFormatServiceImpl implements StringFormatService {
             // Keep last character matched index to append substring into content
             lastCharMatchedIndex = phMatcher.end();
         }
-        return mailContent.length() > 0 ? mailContent.toString() : template;
+        mailContent.append(template.substring(lastCharMatchedIndex));
+        return mailContent.toString();
     }
 }
