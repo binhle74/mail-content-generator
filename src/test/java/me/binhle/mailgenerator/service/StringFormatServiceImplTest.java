@@ -19,7 +19,7 @@ class StringFormatServiceImplTest {
     @Test
     public void whenFormat_shouldReturnFormattedContent() {
         // Prepare data
-        String template = "Hi {user}, welcome to {site}";
+        String template = "Hi {user}, welcome to {site}, bla bla !";
         Map<String, String> parameters = new HashMap<>();
         String username = "Bob";
         String site = "ABC Solutions";
@@ -31,7 +31,7 @@ class StringFormatServiceImplTest {
         String actualFormattedContent = stringFormatService.format(template, parameters);
 
         // Verity
-        assertEquals("Hi Bob, welcome to ABC Solutions", actualFormattedContent);
+        assertEquals("Hi Bob, welcome to ABC Solutions, bla bla !", actualFormattedContent);
     }
 
     @Test
